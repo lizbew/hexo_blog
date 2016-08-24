@@ -15,14 +15,14 @@ tags:
 首先参照Hadoop的[官方文档](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)搭建单节点的系统。 如下修改configuration文件， NameNode为localhost:9000。
 
 * etc/hadoop/core-site.xml
-```xml
+{% codeblock lang:xml %}
 <configuration>
     <property>
         <name>fs.defaultFS</name>
         <value>hdfs://localhost:9000</value>
     </property>
 </configuration>
-```
+{% endcodeblock %}
 
 * etc/hadoop/hdfs-site.xml
 ```xml
@@ -65,8 +65,9 @@ $ bin/hadoop jar /vagrant/tmp/HapTet-1.0-SNAPSHOT.jar com.viifly.hadoop.ta1.Stoc
 $ bin/hdfs dfs -cat ./out/*
 ```
 
+java代码：
 
-```java
+{% codeblock lang:java %}
 package com.viifly.hadoop.ta1;
 
 import java.io.IOException;
@@ -154,5 +155,4 @@ public class StockCount {
         System.exit(job.waitForCompletion(true) ? 0 : 1);
     }
 }
-
-```
+{% endcodeblock %}
