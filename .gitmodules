@@ -1,0 +1,3 @@
+[submodule "themes-pacman"]
+	path = themes/pacman
+	url = https://github.com/lizbew/pacman.git
