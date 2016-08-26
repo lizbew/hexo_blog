@@ -1,5 +1,5 @@
 ---
-title: Setup ingle-node Hadoop and load stock data
+title: Setup single-node Hadoop and load stock data
 date: 2016-08-24 15:53:07
 tags:
 - Hadoop
@@ -17,10 +17,14 @@ tags:
 * etc/hadoop/core-site.xml
 {% codeblock lang:xml %}
 <configuration>
-    <property>
-        <name>fs.defaultFS</name>
-        <value>hdfs://localhost:9000</value>
-    </property>
+  <property>
+    <name>fs.defaultFS</name>
+    <value>hdfs://localhost:9005</value>
+  </property>
+  <property>
+    <name>hadoop.tmp.dir</name>
+    <value>/home/vagrant/download/hadoop-2.7.2/data</value>
+  </property>
 </configuration>
 {% endcodeblock %}
 
@@ -97,13 +101,12 @@ public class StockCount {
 
         public void map(Object key, Text value, Context context
         ) throws IOException, InterruptedException {
-            /*
-            StringTokenizer itr = new StringTokenizer(value.toString());
-            while (itr.hasMoreTokens()) {
-                word.set(itr.nextToken());
-                context.write(word, one);
-            }
-            */
+            //StringTokenizer itr = new StringTokenizer(value.toString());
+            //while (itr.hasMoreTokens()) {
+            //    word.set(itr.nextToken());
+            //    context.write(word, one);
+            //}
+
             String line = value.toString();
             String[] fields = line.split(",");
             if (fields.length > 5 && (fields[0].charAt(0) == '0' || fields[0].charAt(0) == '6' )) {
