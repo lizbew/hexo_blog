@@ -94,3 +94,14 @@ netstat -nao | grep 9090
   except Thrift.TException, tx:
       print '%s' % (tx.message)
 {% endcodeblock %}
+
+## Thrift 函数默认参数的问题
+
+在`hbase.thrit`中`getScannerRows(scannerId, numRows)`第二个参数`numRows`有指明默认值为*1*，
+但生成的python代码并没有默认参数。
+
+hbase.thrift:
+![hbase.thrift](/images/post/2016-08-28-thrift1.png)
+
+THBaseService.py:
+![THBaseService.py](/images/post/2016-08-28-thrift2.png)
