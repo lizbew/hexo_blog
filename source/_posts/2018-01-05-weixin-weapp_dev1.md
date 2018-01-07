@@ -4,7 +4,7 @@ date: 2018-01-05 20:25:51
 tags: [weapp, vertx]
 ---
 
-# 最近在研究小程序， 对照着wafer-node-sdk用java实现一个简单的session server。只能运行起来测试， 并不能实现使用。
+# 最近在研究小程序， 对照着wafer-node-sdk用java实现一个简单的session server, 只能用来测试， 并不能实际使用。
 
 小程序客户端使用 https://github.com/tencentyun/lab-rps-client/
 
@@ -35,4 +35,4 @@ tags: [weapp, vertx]
 
 ```bash
 ssh -R 8080:127.0.0.1:8080 root@remote_ip
-````
+```
