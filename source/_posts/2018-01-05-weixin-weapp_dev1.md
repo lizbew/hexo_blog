@@ -1,7 +1,7 @@
 ---
 title: 最近在研究小程序
 date: 2018-01-05 20:25:51
-tags: weapp
+tags: [weapp, vertx]
 ---
 
 # 最近在研究小程序， 对照着wafer-node-sdk用java实现一个简单的session server。只能运行起来测试， 并不能实现使用。
