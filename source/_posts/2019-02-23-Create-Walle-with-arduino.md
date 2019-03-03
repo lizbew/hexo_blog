@@ -1,5 +1,5 @@
 ---
-title: Create Walle with arduino
+title: 使用arduino完成一个小Walle
 date: 2019-02-23 00:41:24
 tags: [arduino,  Protothreads]
 ---
@@ -52,3 +52,8 @@ tags: [arduino,  Protothreads]
 * DS1302 - https://github.com/msparks/arduino-ds1302
 * u8g2 - https://github.com/olikraus/u8g2/wiki
 
+在学习传感器使用之后，在面包板上组装的
+![面包板组装](/images/post/2019-03-03/walle-01.jpg)
+
+用一个新的Arduino Nano焊接所有器件， 然后用塑料饮料瓶上半部分制作的外壳。
+![焊接完成](/images/post/2019-03-03/walle-02.jpg)
