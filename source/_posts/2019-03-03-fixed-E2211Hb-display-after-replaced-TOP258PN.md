@@ -32,6 +32,3 @@ N多年前入手了Dell E2211Hb 显示器， 但使用的很少， 基本是被�
 ![正常工作](/images/post/2019-03-03/fix-display-07.jpg)
 
 
-
-
-
