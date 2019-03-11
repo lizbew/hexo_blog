@@ -18,21 +18,36 @@ tags: [reactjs, react, nodejs]
 * umijs https://github.com/umijs/umi
 
 
+## 有用的工具
+
 列了下nodejs开发中会用到的一些工具或者库， 作为开发收藏夹，不定期更新。
 
 * nodejs https://nodejs.org/
 * React https://reactjs.org/
-* Vue
+* Vue https://cn.vuejs.org/
 * npm
 * yarn https://yarnpkg.com/
 * npx
-* babel
-* webpack
+* babel https://babeljs.io/
+* webpack https://webpack.js.org/
 * parcel https://parceljs.org/
-* rollup
+* rollup https://www.rollupjs.com/guide/zh
 * lerna https://lernajs.io/
 * hexo https://hexo.io/
 * tarojs https://nervjs.github.io/taro/docs/composition.html
+* TypeScript 入门教程 https://ts.xcatliu.com/
+* ECMAScript 6 入门 http://es6.ruanyifeng.com/
 
+## React 中新增的功能
+
+- React.Fragement https://reactjs.org/docs/fragments.html
+- React.createContext() https://zhuanlan.zhihu.com/p/34038469
+- React v16.6.0: lazy, memo and contextType https://reactjs.org/blog/2018/10/23/react-v-16-6.html
+- 用React.lazy和Suspense优化React代码打包 https://505779.kuaizhan.com/86/82/p5836625940ac61
+
+## 一些三方库
+
+- memoizeone 缓存上一次调用结果 https://zhuanlan.zhihu.com/p/37913276 https://github.com/alexreardon/memoize-one
+- moment 时间操作函数 https://momentjs.com/
 
 
