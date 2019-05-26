@@ -72,3 +72,22 @@ vanilla 启动时需要运行nginx, 且要求从PATH路径中可以找到`nginx`
    $ sudo vim /usr/local/lib/luarocks/rocks/vanilla/0.1.0.rc4-1/bin/vanilla
    需要在.lua文件中定义  VANILLA_NGX_PATH = '/usr/local/openresty/nginx'
 
+
+###  20190526更新
+
+周末，终于实现了一个简单的js来发送统计消息， 代码位于ppstats/js 目录下。 使用了webpack来打包js .
+
+* webpack https://webpack.js.org/guides
+* babel支持aysnc/await语法的插件 https://babeljs.io/docs/en/babel-plugin-transform-runtime
+* fetch https://developer.mozilla.org/zh-CN/docs/Web/API/Fetch_API/Using_Fetch
+* isomorphic-fetch https://www.npmjs.com/package/isomorphic-fetch
+* query-string https://www.npmjs.com/package/query-string
+
+```
+<script src="./ppstats.js"></script>
+<script>
+    ppstats('http://localhost:9901/', 'appid', function(resp){
+        console.log(resp);
+    });
+</script>
+```
