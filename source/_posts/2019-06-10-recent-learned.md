@@ -24,3 +24,9 @@ tags:
 
     - https://github.com/circleci/circleci-docs
     - https://github.com/zeit/now-cli
+
+    circleci中关于构建  https://circleci.com/docs/2.0/testing-ios/#macos-build-containers
+
+4. 领域驱动设计
+
+  设计系统不应该是围绕数据表来操作，而是按领域、业务模型来实施，使用面向对象来思考。 EventSource, CORS.
