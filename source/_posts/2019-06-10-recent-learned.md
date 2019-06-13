@@ -30,3 +30,13 @@ tags:
 4. 领域驱动设计
 
   设计系统不应该是围绕数据表来操作，而是按领域、业务模型来实施，使用面向对象来思考。 EventSource, CORS.
+
+5. docker-for-mac 与 minikube的安装
+
+  查找docker-for-mac的安装的过程中，学习了一波 brew cask.
+  minikube https://github.com/kubernetes/minikube
+  docker https://docker_practice.gitee.io/install/mac.html
+  
+  homebrew cask https://github.com/Homebrew/homebrew-cask
+  brew cask install docker.
+  
