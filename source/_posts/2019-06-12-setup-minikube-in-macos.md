@@ -37,6 +37,7 @@ minikube config set vm-driver hyperkit
 
 ```bash
 brew cask install minikube
+brew install kubernetes-cli
 ```
 
 ## minikube 初体验
@@ -57,6 +58,10 @@ minikube service hello-minikube --url
 kubectl delete services hello-minikube
 kubectl delete deployment hello-minikube
 minikube stop
+# run below to delete status
 #minikube delete
 ```
 
+## 新增学习资源
+
+* https://github.com/caicloud/kube-ladder/blob/master/tutorials/lab2-application-and-service.md
