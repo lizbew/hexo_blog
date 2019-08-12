@@ -17,13 +17,22 @@ prometheus的访问地址为localhost:9090. node_exporter 用来采集linux系�
 
 ## grafana
 
+* 安装指南 https://grafana.com/docs/installation/debian/
 * https://grafana.com/grafana/download?platform=arm
 
 ```bash
-wget https://dl.grafana.com/oss/release/grafana_6.3.2_armhf.deb 
+wget https://dl.grafana.com/oss/release/grafana_6.3.2_armhf.deb
+sudo apt-get install -y adduser libfontconfig
+# sudo apt --fix-broken install  ## may need this
 sudo dpkg -i grafana_6.3.2_armhf.deb 
+
+## start/stop
+sudo /bin/systemctl start grafana-server
+sudo /bin/systemctl stop grafana-server
 ```
 
 grafana中添加prometheus数据源:
 * https://prometheus.io/docs/visualization/grafana/
 * https://grafana.com/docs/features/datasources/prometheus/
+
+![架构图](/images/post/2019-08-12/grafana-view.png)
