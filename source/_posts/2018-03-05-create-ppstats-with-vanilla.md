@@ -21,9 +21,13 @@ tags: [openresty, lua, vanilla]
 2. `allow_hosts` appid相关联的host， 只允许记录存的host的访问
 3. `visit_log` 单次访问的记录
 
+![数据库表](/images/post/2019-12-08/ppstats-charts-tables.png)
+
 ## 代码实现
 
 https://github.com/lizbew/ppstats
+
+![访问流程](/images/post/2019-12-08/ppstats-charts-flow.png)
 
 ## Vinalla相关
 
