@@ -6,16 +6,27 @@ tags: [go module,  glide]
 
 # go module的基本用法
 
-$GOPTAH/pkg/mod/..
+go mod 模块管理是在go 1.11之后推出的包管理工具。 开启之后， 项目代码可以放在任意目录而不是必须在$GOPATH之下； 下载的包会放置在目录`$GOPTAH/pkg/mod/`, 同时忽略 $GOPATH 和 vendor 文件夹.
 
-go mod edit -require=
-go mod edit -replace=
+包的名称定义和依赖包保存在文件go.mod中， 安装之后的go.sum保存实际使用的版本信息。依赖的包中有go.mod文件的话，也会下载其依赖的包。
 
-参考：
+```bash
+go mod init project ## 初始化项目
+go mod edit -require=github.com/gin-gonic/gin@v1.5.0  ## 添加依赖包及其版本， 版本是必须的
+go mod edit -replace=golang.org/x/sys=github.com/golang/sys@v0.0.0 # 替换包
+go mod edit -exclude=cloud.google.com/go@v0.0.0 #排除
+go mod tidy # 整理依赖包，可能会删除未使用的
+go mode tree
+go mod graph
+```
+    
+参考： 
 
+https://colobu.com/2018/08/27/learn-go-module/
 
 # go module使用中遇到的问题
 
+遇到最大的问题是`golang.org/x/..` 这类的包不能直接下载，遇到网络问题停止下来时用`go mod edit -repace=..`来添加替换。依赖的包没有tag， 使用的是git hash串， 然后同一个包就会出现各种不同git hash, 得不停的加replace。 实在忍受不了，只能放弃。
 
 # glide的基本用法
 
