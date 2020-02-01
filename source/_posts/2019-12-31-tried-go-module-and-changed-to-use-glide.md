@@ -61,11 +61,11 @@ $ glide up                                # Update to newest versions of the pac
 
 在已有的项目中运行 `glide init` 全扫描所有go代码文件中的依赖包， 生成glide.yaml文件。 这个命令运行是一个过程式的过程，会下载依赖包的版本信息，然后询问你选择依赖项版本的策略，如选择minor小版本内的或者是限定在patch版本内。
 
-![glide-init](images/post/2019-12-31/glide-init.png)
+![glide-init](/images/post/2019-12-31/glide-init.png)
 
 接下来运行 `glide install` 下载依赖包。在打印的输出看到几行`[ERROR]`， 不能下载包`golang.org/x/sys/unix`。 
 
-![glide-init](images/post/2019-12-31/glide-install-error.png)
+![glide-init](/images/post/2019-12-31/glide-install-error.png)
 
 这种未知原因的错误需要从 github.com/golang/unix 手动下载包来解决。 如下在`glide.yaml`指定依赖项的repo, 再继续运行 `glide install`，如此替换golang.org 下所有包，直到安装成功。
 
