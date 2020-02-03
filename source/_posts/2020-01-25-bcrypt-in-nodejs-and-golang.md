@@ -1,7 +1,7 @@
 ---
 title: 关于nodejs与golang中的bcrypt
 date: 2020-01-25 20:12:38
-tags: [bcrypt, bcryptjs]
+tags: [bcrypt, bcryptjs, golang, nodejs]
 ---
 
 这两天在改写一个简单的bookmark工程， 从nodejs改为golang, nodejs中数据库保存的密码字段用了`bcryptjs`来加密， golang中来使用bcrypt加密算法也相应研究了下。

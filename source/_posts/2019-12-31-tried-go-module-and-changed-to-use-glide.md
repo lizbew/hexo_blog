@@ -1,7 +1,7 @@
 ---
 title: 尝试了下go module，换用更简单的glide
 date: 2019-12-31 07:08:12
-tags: [go module,  glide]
+tags: [go module,  glide, golang]
 ---
 
 # go module的基本用法
