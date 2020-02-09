@@ -12,9 +12,10 @@ tags: [mq, rocketmq, kafka]
 
 * [Apache RocketMQ](http://rocketmq.apache.org/)
 * [十分钟入门RocketMQ](http://jm.taobao.org/2017/01/12/rocketmq-quick-start-in-10-minutes/)
-* [滴滴出行基于 RocketMQ 构建企业级消息队列服务的实践](https://www.infoq.cn/article/dXJ3EYIp*WaHfmVwlMeu)
+* [滴滴出行基于 RocketMQ 构建企业级消息队列服务的实践](https://www.infoq.cn/article/
+* [DDMQ](https://github.com/didi/DDMQ)dXJ3EYIp*WaHfmVwlMeu)
 * [美团团队消息队列设计](https://zhuanlan.zhihu.com/p/46402983)
-* [DDMQ](https://github.com/didi/DDMQ)
+
 
 ## Kafka
 

@@ -12,7 +12,7 @@ tags:
 
 ## 环境搭建
 
-首先参照Hadoop的[官方文档](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)搭建单节点的系统。 如下修改configuration文件， NameNode为localhost:9000。
+首先参照Hadoop的[官方文档](http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/SingleCluster.html)搭建单节点的系统，下载压缩包之后解压， 配置JDK即可运行。这里使用在单机运行的伪集群模式，如下修改configuration文件， NameNode为localhost:9000。
 
 * etc/hadoop/core-site.xml
 {% codeblock lang:xml %}

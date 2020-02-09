@@ -7,8 +7,7 @@ tags:
 - java
 ---
 
-参考HBase官方文档，setup一个单机环境，使用HDFS。 这里主要记录下编译运行java代码访问HBase
-的相关的步骤， 都是从文档里参考而来。
+参考[HBase官方文档](http://hbase.apache.org/book.html#quickstart)，setup一个单机环境，使用HDFS。 这里主要记录下编译运行java代码访问HBase的相关的步骤， 都是从文档里参考而来。
 
 ## 依赖的jar包
 

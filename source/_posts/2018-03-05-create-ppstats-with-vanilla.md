@@ -79,7 +79,7 @@ vanilla 启动时需要运行nginx, 且要求从PATH路径中可以找到`nginx`
 
 ###  20190526更新
 
-周末，终于实现了一个简单的js来发送统计消息， 代码位于ppstats/js 目录下。 使用了webpack来打包js .
+周末，终于实现了一个简单的js来发送统计消息， 代码位于[ppstats/js](https://github.com/lizbew/ppstats/tree/master/js) 目录下。 使用了webpack来打包js .
 
 * webpack https://webpack.js.org/guides
 * babel支持aysnc/await语法的插件 https://babeljs.io/docs/en/babel-plugin-transform-runtime

@@ -50,6 +50,7 @@ brew install glide
 ## 基本用法
 
 ```bash
+## create new project folder and cd to it fistly
 $ glide create                            # Start a new workspace
 $ open glide.yaml                         # and edit away!
 $ glide get github.com/Masterminds/cookoo # Get a package and add to glide.yaml
