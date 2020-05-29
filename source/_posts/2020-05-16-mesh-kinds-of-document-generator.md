@@ -15,7 +15,7 @@ tags: [markdown, doc-generate, vuepress, react]
 
 * react-js https://zh-hans.reactjs.org/
 * redux-in-chinese http://cn.redux.js.org/ 
-* react-router-cn https://github.com/react-guide/react-router-cn
+* react-router-cn http://react-guide.github.io/react-router-cn/
 * dvajs https://github.com/dvajs/dva
 * umijs https://github.com/umijs/umi
 * ant design v3 https://3x.ant.design/
@@ -34,9 +34,12 @@ build的命令为`npm run build`, 在package.json对应的脚本为`gatsby build
 
 ## redux/react-router
 
-redux-in-chinese git https://github.com/camsong/redux-in-chinese
+* redux-in-chinese git https://github.com/camsong/redux-in-chinese
+* react-router-cn https://github.com/react-guide/react-router-cn
 
 这两个使用[gitbook](https://github.com/GitbookIO/gitbook)来生成文档。 但我本地构建时遇到`Error: Cannot find module 'internal/util/types'`， 即使是使用nvm 切换到node 8还是同样错误。gitbook-cli已经不再维护， 暂放弃。
+
+更新:  发现github仓库中的`gh-pages`保存有已经生成好的html文件，下载后放在子目录下也可以访问， 所以直接下载就好了。
 
 ## dvajs
 
