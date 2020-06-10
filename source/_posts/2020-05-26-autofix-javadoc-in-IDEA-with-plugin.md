@@ -1,7 +1,7 @@
 ---
 title: 使用IDEA插件自动补全javadoc
 date: 2020-05-26 23:41:13
-tags: ['javadoc', 'idea', 'plugin']
+tags: ['javadoc', 'idea', 'plugin', 'java']
 ---
 
 工作有代码整改要求， 要给所有java代码添加copyright文件头，类和方法补全javadoc注释。copyright 与javadoc使用了不同的方案来修复： 
